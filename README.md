@@ -36,3 +36,35 @@ customer_support_ai_assistant/
 └── README.md
 ```
 
+## Architecture
+
+```text
+User
+  |
+  v
+Responsive Web UI
+  |
+  v
+FastAPI Backend
+  |
+  +--------------------+
+  |                    |
+  v                    v
+Document Upload     Chat Request
+  |                    |
+  v                    v
+PDF/DOCX/TXT       Conversation Memory
+  |                    |
+  v                    v
+Text Extraction     Knowledge Retrieval
+  |                    |
+  +---------+----------+
+            |
+            v
+       Grounded AI
+            |
+      +-----+-----+
+      |           |
+      v           v
+   Answer     Escalation
+
