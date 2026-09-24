@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SupportAI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+<div class="brand"><div class="logo">✦</div><div><strong>SupportAI</strong><span>Customer Intelligence</span></div></div>
+<div class="side-card">
+<div class="side-title">Knowledge Base</div>
+<label class="upload">
+<input id="fileInput" type="file" accept=".pdf,.docx,.txt">
+<span>＋ Add document</span>
+<small>PDF, DOCX or TXT</small>
+</label>
+<div id="documents" class="documents"></div>
+</div>
+<div class="side-footer">AI-powered support workspace</div>
+</aside>
+<main class="main">
+<header class="topbar">
+<div><h1>Customer Support Assistant</h1><p>Ask questions using your company's trusted documentation.</p></div>
+<div class="status"><span></span> System online</div>
+</header>
+<section id="chat" class="chat">
+<div class="welcome">
+<div class="welcome-icon">✦</div>
+<h2>How can I help you?</h2>
+<p>I can answer questions from your uploaded company documents and FAQs.</p>
+<div class="suggestions">
+<button>What is your refund policy?</button>
+<button>How can I contact support?</button>
+<button>What are the delivery options?</button>
+</div>
+</div>
+</section>
+<div class="composer-wrap">
+<div class="composer">
+<textarea id="message" rows="1" placeholder="Ask a question about your company..."></textarea>
+<button id="send">➤</button>
+</div>
+<div class="hint">Answers are grounded in your uploaded knowledge base.</div>
+</div>
+</main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
