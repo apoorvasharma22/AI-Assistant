@@ -68,3 +68,7 @@ Text Extraction     Knowledge Retrieval
       v           v
    Answer     Escalation
 
+
+## Live Deploymnent Link
+https://ai-assistant-omega-five.vercel.app/
+
